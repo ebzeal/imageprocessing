@@ -1,9 +1,7 @@
 from PIL import Image, ImageFilter
 
-img = Image.open('./Pokedex/pikachu.jpg')
-# pring(dir(img))  - this helps to get all the methods e.g filter save that can be used with img
-# filtered_img = img.filter(ImageFilter.SHARPEN)
-filtered_img = img.convert('L')
+img = Image.open('./astro.jpg')
 
+img.thumbnail((400, 400)) 
 
-filtered_img.save("grey.png", "png")
+img.save('thumbnail.jpg')
